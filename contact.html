@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact · Personal Site</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = {
+    theme: { extend: {
+      colors: { brand: { DEFAULT: '#06b6d4', dark: '#0e7490' } },
+      boxShadow: { glow: '0 10px 30px rgba(3,105,161,.25)' }
+    } }
+  }</script>
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="min-h-screen bg-slate-950 text-slate-100 selection:bg-brand/30">
+  <div class="fixed inset-0 -z-10 pointer-events-none" aria-hidden="true">
+    <div class="absolute inset-x-0 -top-40 blur-3xl opacity-30 h-80 bg-gradient-to-br from-brand to-blue-500"></div>
+  </div>
+  <header class="fixed top-0 inset-x-0 z-50 backdrop-blur bg-slate-900/50 border-b border-white/10">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2 group">
+      <img src="assets/logo.svg" alt="Logo" class="w-8 h-8 rounded-lg shadow-glow group-hover:scale-[1.03] transition" />
+      <span class="font-semibold tracking-wide">PersonalSite</span>
+    </a>
+    <nav class="hidden md:flex gap-6 text-sm">
+      <a class="hover:text-white/90 text-slate-300" href="about.html">About</a>
+      <a class="hover:text-white/90 text-slate-300" href="projects.html">Projects</a>
+      <a class="hover:text-white/90 text-slate-300" href="blog.html">Blog</a>
+      <a class="hover:text-white/90 text-slate-300" href="contact.html">Contact</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden rounded-xl px-3 py-2 bg-white/5 ring-1 ring-white/10">Menu</button>
+  </div>
+  <div id="mobileMenu" class="md:hidden hidden border-t border-white/10">
+    <div class="px-4 py-3 flex flex-col gap-2">
+      <a class="py-2 hover:text-white/90 text-slate-300" href="about.html">About</a>
+      <a class="py-2 hover:text-white/90 text-slate-300" href="projects.html">Projects</a>
+      <a class="py-2 hover:text-white/90 text-slate-300" href="blog.html">Blog</a>
+      <a class="py-2 hover:text-white/90 text-slate-300" href="contact.html">Contact</a>
+    </div>
+  </div>
+</header>
+  <main class="pt-24">
+<section class="py-16">
+  <div class="max-w-3xl mx-auto px-4">
+    <h1 class="text-4xl font-bold mb-6 reveal">Contact</h1>
+    <div class="rounded-3xl p-6 bg-white/5 ring-1 ring-white/10 reveal">
+      <form class="grid gap-4">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <input placeholder="Your name" class="px-4 py-3 rounded-2xl bg-slate-900/60 ring-1 ring-white/10 placeholder:text-slate-500 focus:outline-none focus:ring-brand/50 focus:ring-2">
+          <input type="email" placeholder="Email address" class="px-4 py-3 rounded-2xl bg-slate-900/60 ring-1 ring-white/10 placeholder:text-slate-500 focus:outline-none focus:ring-brand/50 focus:ring-2">
+        </div>
+        <input placeholder="Subject" class="px-4 py-3 rounded-2xl bg-slate-900/60 ring-1 ring-white/10 placeholder:text-slate-500 focus:outline-none focus:ring-brand/50 focus:ring-2">
+        <textarea rows="5" placeholder="Your message..." class="px-4 py-3 rounded-2xl bg-slate-900/60 ring-1 ring-white/10 placeholder:text-slate-500 focus:outline-none focus:ring-brand/50 focus:ring-2"></textarea>
+        <button class="mt-2 px-5 py-3 rounded-2xl bg-brand hover:bg-brand-dark transition w-fit">Send Message</button>
+      </form>
+      <div class="mt-6 grid sm:grid-cols-3 gap-4">
+        <div class="p-4 rounded-2xl bg-white/5 ring-1 ring-white/10">
+          <div class="text-sm text-slate-400">Email</div>
+          <div class="font-medium">jamanrejoan@gmail.com</div>
+        </div>
+        <div class="p-4 rounded-2xl bg-white/5 ring-1 ring-white/10">
+          <div class="text-sm text-slate-400">Location</div>
+          <div class="font-medium">Kolkata, Newtown</div>
+        </div>
+        <div class="p-4 rounded-2xl bg-white/5 ring-1 ring-white/10">
+          <div class="text-sm text-slate-400">Social</div>
+          <div class="font-medium">facebook/Rejoanjamna</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
+  <footer class="mt-20 border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <img src="assets/logo.svg" alt="Logo" class="w-8 h-8" />
+        <span class="text-sm text-slate-400">© 2025 RejoanJaman All rights reserved.</span>
+      </div>
+      <div class="flex gap-4 text-sm">
+        <a class="hover:text-white/90 text-slate-300" href="about.html">About</a>
+        <a class="hover:text-white/90 text-slate-300" href="projects.html">Projects</a>
+        <a class="hover:text-white/90 text-slate-300" href="blog.html">Blog</a>
+        <a class="hover:text-white/90 text-slate-300" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>

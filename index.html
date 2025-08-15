@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RejoanJaman</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = {
+    theme: { extend: {
+      colors: { brand: { DEFAULT: '#06b6d4', dark: '#0e7490' } },
+      boxShadow: { glow: '0 10px 30px rgba(3,105,161,.25)' }
+    } }
+  }</script>
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="min-h-screen bg-slate-950 text-slate-100 selection:bg-brand/30">
+  <div class="fixed inset-0 -z-10 pointer-events-none" aria-hidden="true">
+    <div class="absolute inset-x-0 -top-40 blur-3xl opacity-30 h-80 bg-gradient-to-br from-brand to-blue-500"></div>
+  </div>
+  <header class="fixed top-0 inset-x-0 z-50 backdrop-blur bg-slate-900/50 border-b border-white/10">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2 group">
+      <img src="assets/logo3.png" alt="Logo" class="w-8 h-8 rounded-lg shadow-glow group-hover:scale-[1.03] transition" />
+      <span class="font-semibold tracking-wide">Rejoan jaman</span>
+    </a>
+    <nav class="hidden md:flex gap-6 text-sm">
+      <a class="hover:text-white/90 text-slate-300" href="about.html">About</a>
+      <a class="hover:text-white/90 text-slate-300" href="projects.html">Projects</a>
+      <a class="hover:text-white/90 text-slate-300" href="blog.html">Blog</a>
+      <a class="hover:text-white/90 text-slate-300" href="contact.html">Contact</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden rounded-xl px-3 py-2 bg-white/5 ring-1 ring-white/10">Menu</button>
+  </div>
+  <div id="mobileMenu" class="md:hidden hidden border-t border-white/10">
+    <div class="px-4 py-3 flex flex-col gap-2">
+      <a class="py-2 hover:text-white/90 text-slate-300" href="about.html">About</a>
+      <a class="py-2 hover:text-white/90 text-slate-300" href="projects.html">Projects</a>
+      <a class="py-2 hover:text-white/90 text-slate-300" href="blog.html">Blog</a>
+      <a class="py-2 hover:text-white/90 text-slate-300" href="contact.html">Contact</a>
+    </div>
+  </div>
+</header>
+  <main class="pt-24">
+<section class="py-14">
+<div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+  <div class="reveal">
+    <span class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-brand/80 bg-brand/10 ring-1 ring-brand/30 px-3 py-1 rounded-full">Available for freelance</span>
+    <h1 class="mt-4 text-4xl sm:text-5xl font-bold leading-tight">Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand to-blue-500">Rejoan Jaman</span> — Mobile App Developer</h1>
+    <p class="mt-4 text-slate-300 text-lg">Shipping fast, learning faster.</p>
+    <div class="mt-6 flex flex-wrap gap-3">
+      <a href="projects.html" class="px-5 py-3 rounded-2xl bg-brand hover:bg-brand-dark transition shadow-glow">View Projects</a>
+      <a href="contact.html" class="px-5 py-3 rounded-2xl bg-white/5 ring-1 ring-white/10 hover:bg-white/10 transition">Contact Me</a>
+    </div>
+    <div class="mt-8 grid grid-cols-3 sm:grid-cols-6 gap-2">
+      <div class="px-3 py-2 text-sm rounded-xl bg-white/5 text-slate-300 ring-1 ring-white/10 text-center">PostgreSQL</div>
+<div class="px-3 py-2 text-sm rounded-xl bg-white/5 text-slate-300 ring-1 ring-white/10 text-center">Git</div>
+<div class="px-3 py-2 text-sm rounded-xl bg-white/5 text-slate-300 ring-1 ring-white/10 text-center">Flask</div>
+<div class="px-3 py-2 text-sm rounded-xl bg-white/5 text-slate-300 ring-1 ring-white/10 text-center">Django</div>
+<div class="px-3 py-2 text-sm rounded-xl bg-white/5 text-slate-300 ring-1 ring-white/10 text-center">Pandas</div>
+<div class="px-3 py-2 text-sm rounded-xl bg-white/5 text-slate-300 ring-1 ring-white/10 text-center">React</div>
+    </div>
+  </div>
+  <div class="relative reveal">
+    <div class="absolute -inset-6 rounded-3xl bg-gradient-to-tr from-brand/30 to-blue-500/30 blur-2xl"></div>
+    <div class="relative rounded-3xl bg-white/5 ring-1 ring-white/10 p-4 float">
+      <img src="assets/imgfute.jpg" alt="Avatar" class="w-full h-auto rounded-2xl shadow-glow">
+    </div>
+  </div>
+</div>
+</section>
+<section class="py-14 bg-gradient-to-b from-white/5 to-transparent border-y border-white/10">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-2xl font-bold mb-6 reveal">Featured Projects</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+    <a href="projects.html" class="group block p-6 rounded-3xl bg-white/5 ring-1 ring-white/10 hover:bg-white/10 transition reveal">
+      <div class="flex items-start justify-between">
+        <h3 class="text-xl font-semibold">SageDocs</h3>
+        <span class="text-xs px-2 py-1 rounded-full bg-brand/15 ring-1 ring-brand/30 text-brand">Featured</span>
+      </div>
+      <p class="mt-2 text-slate-300">A modern dashboard for tracking KPIs with real‑time widgets.</p>
+      <p class="mt-4 text-sm text-slate-400">Stack: React, Tailwind, Vite</p>
+      <div class="mt-4 text-sm text-brand group-hover:translate-x-1 transition">See more →</div>
+    </a>
+    
+    <a href="projects.html" class="group block p-6 rounded-3xl bg-white/5 ring-1 ring-white/10 hover:bg-white/10 transition reveal">
+      <div class="flex items-start justify-between">
+        <h3 class="text-xl font-semibold">DataPulse</h3>
+        <span class="text-xs px-2 py-1 rounded-full bg-brand/15 ring-1 ring-brand/30 text-brand">Featured</span>
+      </div>
+      <p class="mt-2 text-slate-300">IoT water usage monitor with alerting & insights.</p>
+      <p class="mt-4 text-sm text-slate-400">Stack: Next.js, Tailwind, Prisma</p>
+      <div class="mt-4 text-sm text-brand group-hover:translate-x-1 transition">See more →</div>
+    </a>
+    
+    <a href="projects.html" class="group block p-6 rounded-3xl bg-white/5 ring-1 ring-white/10 hover:bg-white/10 transition reveal">
+      <div class="flex items-start justify-between">
+        <h3 class="text-xl font-semibold">ChartSpark</h3>
+        <span class="text-xs px-2 py-1 rounded-full bg-brand/15 ring-1 ring-brand/30 text-brand">Featured</span>
+      </div>
+      <p class="mt-2 text-slate-300">Generate plot ideas and outlines instantly.</p>
+      <p class="mt-4 text-sm text-slate-400">Stack: React, Tailwind, Vite</p>
+      <div class="mt-4 text-sm text-brand group-hover:translate-x-1 transition">See more →</div>
+    </a>
+    
+    </div>
+  </div>
+</section>
+<section class="py-14">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="reveal rounded-3xl p-8 bg-white/5 ring-1 ring-white/10">
+      <h3 class="text-xl font-semibold">Newsletter</h3>
+      <p class="mt-2 text-slate-300">Get occasional updates about my projects and articles.</p>
+      <form class="mt-4 flex gap-3 max-w-md">
+        <input type="email" required placeholder="you@example.com" class="flex-1 px-4 py-3 rounded-2xl bg-slate-900/60 ring-1 ring-white/10 placeholder:text-slate-500 focus:outline-none focus:ring-brand/50 focus:ring-2">
+        <button class="px-5 py-3 rounded-2xl bg-brand hover:bg-brand-dark transition">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+  </main>
+  <footer class="mt-20 border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <img src="assets/logo.svg" alt="Logo" class="w-8 h-8" />
+        <span class="text-sm text-slate-400">© 2025  rejoanjaman. All rights reserved.</span>
+      </div>
+      <div class="flex gap-4 text-sm">
+        <a class="hover:text-white/90 text-slate-300" href="https://www.facebook.com/rejoan.jaman.73">facebook</a>
+        <a class="hover:text-white/90 text-slate-300" href="https://www.linkedin.com/in/rejoan-jaman-62a2b8377/">linkedin</a>
+        <a class="hover:text-white/90 text-slate-300" href="blog.html">Blog</a>
+        <a class="hover:text-white/90 text-slate-300" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
